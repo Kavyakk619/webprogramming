@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Quiz</title>
+</head>
+<body>
+<h2 style="text-align:center,">Online Quiz</h2>
+<div>
+<h3>1.Who is the ceo of the google?</h3>
+<input type="radio" name="q1"id="a">Sunder pichai<br>
+<input type="radio" name="q1">Elon Musk<br>
+<input type="radio" name="q1">Bill Gates<br>
+<input type="radio" name="q1">Zucken berg<br>
+<h3>2.What is the full form of html?</h3>
+<input type="radio" name="q2"id="b">Hyper text markup language<br>
+<input type="radio" name="q2">High text markup language<br>
+<input type="radio" name="q2">hyper text makeup language<br>
+<input type="radio" name="q2">Hyper text markup learner<br>
+<h3>3.what is the fullform of CSS?</h3>
+<input type="radio" name="q3">cascading single sheet<br>
+<input type="radio" name="q3"id="c">cascading style sheet<br>
+<input type="radio" name="q3">cascading style slip<br>
+<input type="radio" name="q3">casting style sheet<br>
+<input type="Submit" value="Submit" onclick="result()"><br><br>
+<p id="res"style="font-weight:600;font-size:18px;"> Score: 0</p>
+
+</div>
+<script>
+function result(){
+let score=0;
+if(document.getElementById("a").checked)
+{
+score++;
+}
+if(document.getElementById("b").checked)
+{
+score++;
+}
+if(document.getElementById("c").checked)
+{
+score++;
+}
+document.getElementById("res").innerHTML="score:"+score;
+}
+</script>
+</body>
+</html>
+  

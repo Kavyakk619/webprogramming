@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Event</title>
+</head>
+<body style="text-align: center;">
+<h2>Mouse Handling</h2>
+<img
+  id="img-tag"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHj0r68jZH4eo3fYSF4w2kuacrnLWu69OP644HsnhNkw&s=10"
+  onmouseover="changeImg()"
+  onmouseout="setOld()"
+  width="220"
+  height="230"
+  alt="Image"
+ />
+<script>
+        function changeImg() {
+            document.getElementById("img-tag").src =
+                "https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcR1asbYmq3iItJ3yAB1s0gLPlrKZ0ErAAwsj3bTFW90_8cMEt-3_Xr_rNqG&s=10";
+        }
+
+        function setOld() {
+            document.getElementById("img-tag").src =
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHj0r68jZH4eo3fYSF4w2kuacrnLWu69OP644HsnhNkw&s=10";
+        }
+</script>
+</body>
+</html>
+
